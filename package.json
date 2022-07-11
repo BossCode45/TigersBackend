@@ -1,0 +1,14 @@
+{
+  "name": "tigersbackend",
+  "version": "1.0.0",
+  "description": "Backend for handling tigers and sheep games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BossCode",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
