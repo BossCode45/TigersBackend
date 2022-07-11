@@ -49,6 +49,7 @@ app.post("/playmove", (req, res) => {
 		game.board = req.body.game.board;
 		game.nextPlayer = 1;
 	}
+	game.turn++;
 	res.status(200);
 	res.json({game: game});
 });

@@ -1,0 +1,14 @@
+* Tigers backend
+
+** Install instructions
++ Clone the project
++ Run npm i
+
+** Usage instructions
++ Run `node index.js`
+
+  
+* Client inscructions
+See the varius json files for examples of what to send
+The structure of a games goes:
+Join lobby (join.json, /joingame) -> View game status (get.json /gamestatus) -> Make moves (move.json /playmove)
