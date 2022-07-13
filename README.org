@@ -81,7 +81,6 @@ You will get a responce back looking something like this:
 		"nextPlayer": 1
 	}
 }
-}
 #+end_src
 (assuming players 1 and 2 have IDs 0 and 1, and display names "p1" and "p2" respectively, and no turns have been played)
 *** Playing a move
