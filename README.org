@@ -1,4 +1,4 @@
-* Tigers backend
+#+TITLE:	Tigers And Sheep Backend Instructions
 
 ** Install instructions
 + Clone the project
@@ -11,11 +11,11 @@
 * Client instructions
 - These are likely to be removed
 See the varius json files for examples of what to send
-The structure of a games goes:
+The structure of a game goes:
 Join lobby (join.json, /joingame) -> View game status (get.json /gamestatus) -> Make moves (move.json /playmove)
 
 ** Inputs and outputs
-All the endpoints are currently POST endpoints and not get endpoints.
+All the endpoints are currently POST endpoints and not GET endpoints.
 You should send JSON data and will get json data back.
 All the endpoints are on port 3000.
 *** Joining games
