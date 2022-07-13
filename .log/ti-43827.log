@@ -1,0 +1,73 @@
+[18:53:49.970] Global cache location '/home/boss/.cache/typescript/4.7', safe file path '/usr/lib/node_modules/typescript/lib/typingSafeList.json', types map path /usr/lib/node_modules/typescript/lib/typesMap.json
+[18:53:49.972] Processing cache location '/home/boss/.cache/typescript/4.7'
+[18:53:49.972] Trying to find '/home/boss/.cache/typescript/4.7/package.json'...
+[18:53:49.974] Loaded content of '/home/boss/.cache/typescript/4.7/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.599"},"devDependencies":{"@types/body-parser":"^1.19.2","@types/express":"^4.17.13","@types/merge-descriptors":"^1.0.1","@types/serve-static":"^1.13.10"}}
+[18:53:49.974] Loaded content of '/home/boss/.cache/typescript/4.7/package-lock.json'
+[18:53:49.989] Adding entry into typings cache: 'body-parser' => '/home/boss/.cache/typescript/4.7/node_modules/@types/body-parser/index.d.ts'
+[18:53:49.992] Adding entry into typings cache: 'express' => '/home/boss/.cache/typescript/4.7/node_modules/@types/express/index.d.ts'
+[18:53:49.995] Adding entry into typings cache: 'merge-descriptors' => '/home/boss/.cache/typescript/4.7/node_modules/@types/merge-descriptors/index.d.ts'
+[18:53:49.997] Adding entry into typings cache: 'serve-static' => '/home/boss/.cache/typescript/4.7/node_modules/@types/serve-static/index.d.ts'
+[18:53:49.997] Finished processing cache location '/home/boss/.cache/typescript/4.7'
+[18:53:49.998] Process id: 43834
+[18:53:49.998] NPM location: /usr/bin/npm (explicit '--npmLocation' not  provided)
+[18:53:49.998] validateDefaultNpmLocation: false
+[18:53:49.999] Npm config file: /home/boss/.cache/typescript/4.7/package.json
+[18:53:49.999] Updating types-registry npm package...
+[18:53:49.999] Exec: /usr/bin/npm install --ignore-scripts types-registry@latest
+[18:53:51.090]     Succeeded. stdout:
+    
+    changed 1 package, and audited 12 packages in 784ms
+
+found 0 vulnerabilities
+
+[18:53:51.091] Updated types-registry npm package
+[18:53:52.712] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/usr/lib/node_modules/typescript/lib/lib.es5.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2015.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2016.d.ts","/usr/lib/node_modules/typescript/lib/lib.dom.d.ts","/usr/lib/node_modules/typescript/lib/lib.dom.iterable.d.ts","/usr/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/usr/lib/node_modules/typescript/lib/lib.scripthost.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2015.core.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2015.generator.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2015.iterable.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2015.promise.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2015.proxy.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2015.reflect.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2015.symbol.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2016.array.include.d.ts","/usr/lib/node_modules/typescript/lib/lib.es2016.full.d.ts","/home/boss/Documents/Coding/TigersBackend/index.js"],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/boss/Documents/Coding/TigersBackend","kind":"discover"}
+[18:53:52.725] Loaded safelist from types map file '/usr/lib/node_modules/typescript/lib/typesMap.json'
+[18:53:52.726] Explicitly included types: []
+[18:53:52.727] Typing names in '/home/boss/Documents/Coding/TigersBackend/package.json' dependencies: ["express"]
+[18:53:52.728] Searching for typing names in /home/boss/Documents/Coding/TigersBackend/node_modules; all files: ["/home/boss/Documents/Coding/TigersBackend/node_modules/express/package.json"]
+[18:53:52.729]     Found package names: ["express"]
+[18:53:52.730] Inferred typings from unresolved imports: []
+[18:53:52.730] Result: {"cachedTypingPaths":["/home/boss/.cache/typescript/4.7/node_modules/@types/express/index.d.ts"],"newTypingNames":[],"filesToWatch":["/home/boss/Documents/Coding/TigersBackend/bower_components","/home/boss/Documents/Coding/TigersBackend/package.json","/home/boss/Documents/Coding/TigersBackend/node_modules"]}
+[18:53:52.730] Finished typings discovery: {"cachedTypingPaths":["/home/boss/.cache/typescript/4.7/node_modules/@types/express/index.d.ts"],"newTypingNames":[],"filesToWatch":["/home/boss/Documents/Coding/TigersBackend/bower_components","/home/boss/Documents/Coding/TigersBackend/package.json","/home/boss/Documents/Coding/TigersBackend/node_modules"]}
+[18:53:52.731] DirectoryWatcher:: Added:: WatchInfo: /home/boss/Documents/Coding/TigersBackend/bower_components
+[18:53:52.731] DirectoryWatcher:: Added:: WatchInfo: /home/boss/Documents/Coding/TigersBackend/bower_components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[18:53:52.733] Elapsed:: 1.492689000442624ms DirectoryWatcher:: Added:: WatchInfo: /home/boss/Documents/Coding/TigersBackend/bower_components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[18:53:52.733] FileWatcher:: Added:: WatchInfo: /home/boss/Documents/Coding/TigersBackend/package.json
+[18:53:52.733] FileWatcher:: Added:: WatchInfo: /home/boss/Documents/Coding/TigersBackend/package.json 2000 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[18:53:52.733] DirectoryWatcher:: Added:: WatchInfo: /home/boss/Documents/Coding/TigersBackend/node_modules
+[18:53:52.734] DirectoryWatcher:: Added:: WatchInfo: /home/boss/Documents/Coding/TigersBackend/node_modules 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[18:53:52.760] Elapsed:: 25.918332000263035ms DirectoryWatcher:: Added:: WatchInfo: /home/boss/Documents/Coding/TigersBackend/node_modules 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[18:53:52.760] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":["/home/boss/.cache/typescript/4.7/node_modules/@types/express/index.d.ts"],"unresolvedImports":[],"kind":"action::set"}
+[18:53:52.761] Response has been sent.
+[18:53:52.761] No new typings were requested as a result of typings discovery
+[18:59:28.611] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/home/boss/.cache/typescript/4.7/node_modules/@types/express/index.d.ts","/home/boss/Documents/Coding/TigersBackend/index.js"],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/boss/Documents/Coding/TigersBackend","kind":"discover"}
+[18:59:28.612] Explicitly included types: []
+[18:59:28.614] Typing names in '/home/boss/Documents/Coding/TigersBackend/package.json' dependencies: ["express"]
+[18:59:28.615] Searching for typing names in /home/boss/Documents/Coding/TigersBackend/node_modules; all files: ["/home/boss/Documents/Coding/TigersBackend/node_modules/express/package.json"]
+[18:59:28.617]     Found package names: ["express"]
+[18:59:28.617] Inferred typings from unresolved imports: []
+[18:59:28.617] Result: {"cachedTypingPaths":["/home/boss/.cache/typescript/4.7/node_modules/@types/express/index.d.ts"],"newTypingNames":[],"filesToWatch":["/home/boss/Documents/Coding/TigersBackend/bower_components","/home/boss/Documents/Coding/TigersBackend/package.json","/home/boss/Documents/Coding/TigersBackend/node_modules"]}
+[18:59:28.617] Finished typings discovery: {"cachedTypingPaths":["/home/boss/.cache/typescript/4.7/node_modules/@types/express/index.d.ts"],"newTypingNames":[],"filesToWatch":["/home/boss/Documents/Coding/TigersBackend/bower_components","/home/boss/Documents/Coding/TigersBackend/package.json","/home/boss/Documents/Coding/TigersBackend/node_modules"]}
+[18:59:28.617] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":["/home/boss/.cache/typescript/4.7/node_modules/@types/express/index.d.ts"],"unresolvedImports":[],"kind":"action::set"}
+[18:59:28.618] Response has been sent.
+[18:59:28.618] No new typings were requested as a result of typings discovery
+[19:12:17.619] FileWatcher:: Triggered with /home/boss/Documents/Coding/TigersBackend/package.json 1:: WatchInfo: /home/boss/Documents/Coding/TigersBackend/package.json 2000 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[19:12:17.620] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","kind":"action::invalidate"}
+[19:12:17.620] Response has been sent.
+[19:12:17.620] Elapsed:: 0.4421720001846552ms FileWatcher:: Triggered with /home/boss/Documents/Coding/TigersBackend/package.json 1:: WatchInfo: /home/boss/Documents/Coding/TigersBackend/package.json 2000 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[19:12:17.721] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/home/boss/.cache/typescript/4.7/node_modules/@types/express/index.d.ts","/home/boss/Documents/Coding/TigersBackend/index.js"],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/boss/Documents/Coding/TigersBackend","kind":"discover"}
+[19:12:17.722] Explicitly included types: []
+[19:12:17.724] Typing names in '/home/boss/Documents/Coding/TigersBackend/package.json' dependencies: ["express"]
+[19:12:17.724] Searching for typing names in /home/boss/Documents/Coding/TigersBackend/node_modules; all files: ["/home/boss/Documents/Coding/TigersBackend/node_modules/express/package.json"]
+[19:12:17.726]     Found package names: ["express"]
+[19:12:17.726] Inferred typings from unresolved imports: []
+[19:12:17.726] Result: {"cachedTypingPaths":["/home/boss/.cache/typescript/4.7/node_modules/@types/express/index.d.ts"],"newTypingNames":[],"filesToWatch":["/home/boss/Documents/Coding/TigersBackend/bower_components","/home/boss/Documents/Coding/TigersBackend/package.json","/home/boss/Documents/Coding/TigersBackend/node_modules"]}
+[19:12:17.726] Finished typings discovery: {"cachedTypingPaths":["/home/boss/.cache/typescript/4.7/node_modules/@types/express/index.d.ts"],"newTypingNames":[],"filesToWatch":["/home/boss/Documents/Coding/TigersBackend/bower_components","/home/boss/Documents/Coding/TigersBackend/package.json","/home/boss/Documents/Coding/TigersBackend/node_modules"]}
+[19:12:17.726] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":["/home/boss/.cache/typescript/4.7/node_modules/@types/express/index.d.ts"],"unresolvedImports":[],"kind":"action::set"}
+[19:12:17.727] Response has been sent.
+[19:12:17.727] No new typings were requested as a result of typings discovery

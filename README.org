@@ -8,7 +8,12 @@
 + Run `node index.js`
 
   
-* Client inscructions
+* Client instructions
 See the varius json files for examples of what to send
 The structure of a games goes:
 Join lobby (join.json, /joingame) -> View game status (get.json /gamestatus) -> Make moves (move.json /playmove)
+
+** Inputs and outputs
+All the endpoints are currently POST endpoints and not get endpoints.
+You should send JSON data and will get json data back.
+*** Joining games

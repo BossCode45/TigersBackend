@@ -1,13 +1,13 @@
-const express = {express};
+const express = require('express');
 
 const app = express();
 const port = 3000;
 
 app.use(express.json());
 
-const games = [];
-const players = [];
-let currID = 0;
+var games = [];
+var players = [];
+var currID = 0;
 
 const startBoard = ["T   T",
 					"     ",
@@ -20,7 +20,7 @@ app.post("/joingame", (req, res) => {
 	{
 		players[req.body.player.id] = req.body.player;
 	}
-	if(games[currID].p1 != null)
+	if(games[currID]?.p1 != null)
 	{
 		games[currID].p2 = req.body.player;
 		res.status(200);
@@ -36,10 +36,8 @@ app.post("/joingame", (req, res) => {
 });
 
 app.post("/playmove", (req, res) => {
-	const game = games[req.body.game.id];
-	const player = players[req.body.player.id];
-	
-
+	var game = games[req.body.game.id];
+	var player = players[req.body.player.id]
 	if(game.nextPlayer == 1 && game.p1.id == player.id)
 	{
 		game.board = req.body.game.board;
@@ -50,7 +48,6 @@ app.post("/playmove", (req, res) => {
 		game.board = req.body.game.board;
 		game.nextPlayer = 1;
 	}
-	game.turn++;
 	res.status(200);
 	res.json({game: game});
 });
