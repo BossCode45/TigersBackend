@@ -9,6 +9,7 @@
 
   
 * Client instructions
+- These are likely to be removed
 See the varius json files for examples of what to send
 The structure of a games goes:
 Join lobby (join.json, /joingame) -> View game status (get.json /gamestatus) -> Make moves (move.json /playmove)
@@ -16,4 +17,98 @@ Join lobby (join.json, /joingame) -> View game status (get.json /gamestatus) -> 
 ** Inputs and outputs
 All the endpoints are currently POST endpoints and not get endpoints.
 You should send JSON data and will get json data back.
+All the endpoints are on port 3000.
 *** Joining games
+The endpoint for this is "<server ip>:3000/joingame"
+You should send JSON following this syntax:
+#+begin_src js
+{
+	"player":
+	{
+		"id": {Unique ID},
+		"name": "{Display name}"
+	}
+}
+#+end_src
+You will get back a responce following this syntax:
+#+begin_src js
+{
+	"game": {
+		"id": 0,
+		"p1": {
+			"id": {Your unique ID},
+			"name": "{Your display name}"
+		},
+		"p2": null,
+		"turn": 0,
+		"board":   ["T   T",
+					"     ",
+					"     ",
+					"     ",
+					"T   T"],
+		"nextPlayer": 1
+	}
+}
+#+end_src
+If you are the first player then it will be exactly like this - however if you are the seccond player it will include your information under `"p2"` and under `"p1"` will be the first players information.
+*** Getting game states
+The endpoint for this is "<server ip>:3000/gamestatus"
+You should send JSON following this syntax:
+#+begin_src js
+{
+	"id": 0
+}
+#+end_src
+You will get a responce back looking something like this:
+#+begin_src js
+{
+	"game": {
+		"id": 0,
+		"p1": {
+			"id": 0,
+			"name": "p1"
+		},
+		"p2": {
+			"id": 1,
+			"name": "p2"
+		},
+		"turn": 0,
+		"board":   ["T   T",
+					"     ",
+					"     ",
+					"     ",
+					"T   T"],
+		"nextPlayer": 1
+	}
+}
+}
+#+end_src
+(assuming players 1 and 2 have IDs 0 and 1, and display names "p1" and "p2" respectively, and no turns have been played)
+*** Playing a move
+The endpoint for this is "<server ip>:3000/gamestatus"
+You should send JSON following this syntax:
+#+begin_src js
+{
+	"player":
+	{
+		"id": {Your ID}
+	},
+	"game":
+	{
+		"id": {Game ID},
+		"board":["T   T",
+				 "     ",
+				 "S    ",
+				 "     ",
+				 "T   T"]
+	}
+}
+#+end_src
+This is playing the first move of a game (assuming you are player 1).
+You will get a responce back looking something like the responce from getting game status.
+** How the API is intended to be used.
+*** Players
+Players should join a game when they want to play, If the game has both players in it they can then start monitoring the game by getting game status and then play a move when it is their turn. If they are the first player they should monitor the game until both players have joined, at which point they should play their first move.
+The game should then continue to play out - with each player monitoring the game status until it is their turn and then playing their turn when it is time for it (currently there is no way to end a game).
+*** Spectators
+Spectators can spectate a game given the ID. They should just keep requesting game status for the game they are watching whenever they want to know what is going on.
